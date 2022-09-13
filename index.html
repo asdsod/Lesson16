@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>lesson16</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">Я шапка</div>
+        <div class="main">
+            <div class="make">
+                <div class="make__countainer">
+                    <div class="make__title">
+                        Make an appointment
+                    </div>
+                    <form action="#" class="make__form form">
+                        <div class="form__items">
+                            <div class="form__item">
+                                <input class="form__input" required placeholder="Name" type="text">
+                            </div>
+                            <div class="form__item">
+                                <input class="form__input" required placeholder="Email" type="email">
+                            </div>
+                            <div class="form__item">
+                                <input class="form__input" required placeholder="Phone Number" type="tel">
+                            </div>
+                            <div class="form__item">
+                                <select class="form__select"  name="select" id="name">
+                                    <option value="1">Service 1</option>
+                                    <option value="2">Service 2</option>
+                                    <option value="3">Service 3</option>
+                                    <option value="4">Service 4</option>
+                                </select>
+                            </div>
+                            <div class="form__item">
+                                <textarea class="form__textarea" required name="textarea" id="textarea" ></textarea>
+                            </div>
+                        </div>
+                        <div class="form__make-buttons">
+                            <button type="submit" class="form__make-button">Make Botton</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="summary">
+                <div class="summary__countainer">
+                    <div class="summary__title">Summary</div>
+                    <div class="summary__sub-title">Estimate Shipping and Tax</div>
+                    <div class="summary__text">Enter your destination to get a shipping estimate.</div>
+                    <form action="#" class="summary__form form-summary">
+                        <div class="form-summary__items">
+                            <div class="form-summary__item">
+                                <label for="country" class="form-summary__label">Country</label>
+                                <select class="form-summary__select" required name="select2" id="country">
+                                    <option value="">laos</option>
+                                    <option value="">Seul</option>
+                                    <option value="">Aul</option>
+                                </select>
+                            </div>
+                            <div class="form-summary__item">
+                                <label for="state" class="form-summary__label">State/Province</label>
+                                <input id="state" type="text" required class="form-summary__input">
+                            </div>
+                            <div class="form-summary__item">
+                                <label for="zip" class="form-summary__label">Zip/Postal Code</label>
+                                <input id="zip" type="text" required class="form-summary__input">
+                            </div>
+                        </div>
+                        <div class="form-summary__radio radio-summary">
+                            <div class="radio-summary__items">
+                                <h2 class="radio-summary__title">Standard Rate</h2>
+                                <div class="radio-summary__item">
+                                    <input id="radio1" required type="radio" name="summary" class="radio-summary__input">
+                                    <label for="radio1" class="radio-summary__label">Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</label>
+                                </div>    
+                                <h2 class="radio-summary__title">Pickup from store</h2>
+                                <div class="radio-summary__item">
+                                    <input id="radio2" required type="radio" name="summary" class="radio-summary__input">
+                                    <label for="radio2" class="radio-summary__label">1234 Street Adress City Address, 1234 $0.00</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-summary__discoint discoint">
+                            <h2 class="discoint__title">Apply Discount Code</h2>
+                            <div class="discoint__item">
+                                <label for="enter" class="discoint__label">Enter discount code</label>
+                                <input id="enter" type="text" required placeholder="Enter Discount code" class="discoint__input">
+                            </div>
+                        </div>
+                        <button type="submit" class="form-summary__button">
+                            Apply Discount
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">Я подвал</div>
+    </div>
+</body>
+</html>

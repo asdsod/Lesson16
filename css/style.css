@@ -1,0 +1,247 @@
+@import 'null.css';
+.body{
+    
+}
+/* *{outline: 1px solid red;} */
+.wrapper{
+    overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction:column;
+    font-family: Roboto;
+}
+.main{
+    flex-grow: 1;
+}
+.make{
+    background-image: url(../image/BG\ Image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.make__countainer{
+    margin: 0px auto;
+    flex: 0 1 585px;
+    border: 1px solid #111;
+    border-radius: 40px;
+    background: #5D62B5;
+}
+.make__title{
+    padding: 76px 0px 0px 0px;
+    text-align: center;
+    font-weight: 900;
+    line-height: 42px;
+    font-size: 36px;
+    color: white;
+}
+.make__form{
+
+}
+.form__items{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -11px;
+    padding: 48px 57px 30px 57px ;
+    row-gap: 22px;
+}
+.form__item{
+    flex: 1 1 50%;
+    padding: 0px 11px;
+}
+
+.form__input, .form__select, .form__textarea{
+    border-radius: 10px; 
+    min-width: 100%;
+    padding: 23px 17px; 
+    outline: 2px solid white;
+    background: #5D62B5;
+    color: white;
+}
+
+.form__select{
+    
+}
+.form__textarea{
+    min-height: 180px;
+    resize: none;
+}
+.form__make-buttons{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form__make-button{
+    cursor: pointer;
+    padding: 10px;
+    background-color:forestgreen;
+    border-radius: 5px;
+    font-weight: 900;
+    color: white;
+}
+.summary{  
+    display: flex;
+}
+.summary__countainer{
+    margin: 0px auto;
+    background-color: rgb(	245	247	255);
+    display: flex;
+    flex: 0 1 446px;
+    padding: 15px 30px;
+    flex-direction: column;
+}
+.summary__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+}
+.summary__sub-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+}
+.summary__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    opacity: 0.5;
+}
+.summary__form {
+}
+.form-summary {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+}
+.form-summary__items {
+   display: flex;
+   flex-direction: column;
+}
+.form-summary__item {
+    height: 88px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+}
+.form-summary__item:not(:last-child){
+    margin-bottom: 5px;
+}
+.form-summary__label, .radio-summary__title, .discoint__label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 38px;
+    font-weight: 600;
+}
+.form-summary__select, .form-summary__input, .discoint__input {
+    outline: 1px solid darkgrey;
+    border-radius: 4px;
+    height: 50px;
+    padding: 0px 0px 0px 10px;
+}
+.form-summary__input {
+    
+}
+.form-summary__select{
+    
+}
+.form-summary__radio{
+    margin: 0px 0px 50px 0px;
+}
+.radio-summary{
+    
+}
+
+.radio-summary__items {
+}
+.radio-summary__title {
+
+}
+.radio-summary__item {
+    position: relative
+}
+.radio-summary__input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+}
+.radio-summary__label {
+    display: flex;
+    padding: 0px 0px 0px 25px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.radio-summary__label::before{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    border: 2px solid blue;
+    border-radius: 50%;
+    min-width: 15px;
+    height: 15px;
+    cursor: pointer;
+
+}
+.radio-summary__label::after{
+    content: '';
+    background-color:blue;
+    border-radius: 50%;
+    min-width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 6px;
+    left: 3px;
+    transform: scale(0);
+    cursor: pointer;
+    
+}
+.radio-summary__input:checked + .radio-summary__label::after{
+    
+    transform: scale(1);
+    transition: 0.5s;
+}
+.form-summary__discoint{
+    margin: 0px 0px 10px 0px;
+}
+.discoint{
+
+}
+.discoint__title{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+.discoint__item{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.discoint__input{
+
+}
+.discoint__label{
+
+}
+.form-summary__button{
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid rgb(	1	86	255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgb(1	86	255); 
+    flex: 1 1 auto;
+    cursor: pointer;
+}
+.form-summary__button:active{
+    color: red;
+}
+
+
